@@ -71,7 +71,6 @@
 </nav>
 
 
-
 <!-- header -->
 <header class="header ">
 <br></br> <br></br> 
@@ -104,7 +103,7 @@
 	  <h1 class="text-center">About Me</h1>
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<img src="C:\Users\eliot\Desktop\Code\Website_Bootstraped\Website_Bootstrapped\images\Profile.PNG" class="img-fluid" class="img-rounded">
+				<img src="images\Profile.PNG" class="img-fluid" class="img-rounded">
 				<span class="text-justify">Undergraduate Student at New York University</span>
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-12 desc">
@@ -144,22 +143,7 @@
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<img src="" class="img-fluid">
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<img src="images/portfolio/port11.png" class="img-fluid">
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<img src="images/portfolio/electric.png" class="img-fluid">
-			</div>
 
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<img src="images/portfolio/Classic.jpg" class="img-fluid">
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<img src="images/portfolio/port1.png" class="img-fluid">
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<img src="images/portfolio/port8.png" class="img-fluid">
-			</div>
 		</div>
 	</div>
 </div>
@@ -229,7 +213,32 @@
 
 
 <!-- Contact form -->
-<div class="contact-form" id="Contact">
+<form method="post" name="contact_form"
+action="contact-form-handler.php">
+    Your Name:
+    <input type="text" name="name">
+
+    Email Address:
+    <input type="text" name="email">
+
+    Message:
+    <textarea name="message"></textarea>
+
+    <input type="submit" value="Submit">
+</form>	
+
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script>
+	
+
+
+
+{% comment %} <div class="contact-form" id="Contact">
 	<div class="container">
 		<form>
 			<div class="row">
@@ -248,12 +257,13 @@
 				   	 	
 				   	 </textarea>
 				   </div>
-				   <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+				   	<a href="google.com/error_not_set_up_yet" target="_blank" class="btn btn-info" role="button">Send </a>
+				   <!-- <input type="submit" class="btn btn-secondary btn-block" value="Send" name=""> -->
 				</div>
 			</div>
 		</form>
 	</div>
-</div>
+</div> {% endcomment %}
 <!-- add Javasscript file from js file -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
