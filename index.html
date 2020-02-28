@@ -140,6 +140,9 @@
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<a href="coming_soon.html">
 				<img src="images/AI.jpg" class="img-fluid">
+				<p>
+				Projects
+				</p> 
 			</div>
 
 			<div class="col-lg-4 col-md-4 col-sm-12">
@@ -212,35 +215,11 @@
 		</div>
 	</div>
 </div>
-
-
-<!-- Contact form -->
-<form method="post" name="contact_form"
-action="contact-form-handler.php">
-    Your Name:
-    <input type="text" name="name">
-
-    Email Address:
-    <input type="text" name="email">
-
-    Message:
-    <textarea name="message"></textarea>
-
-    <input type="submit" value="Submit">
-</form>	
-
-<script language="JavaScript">
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("email","req","Please provide your email");
-frmvalidator.addValidation("email","email",
-  "Please enter a valid email address");
-</script>
 	
 
 
 
-{% comment %} <div class="contact-form" id="Contact">
+ <div class="contact-form" id="Contact">
 	<div class="container">
 		<form>
 			<div class="row">
@@ -265,7 +244,7 @@ frmvalidator.addValidation("email","email",
 			</div>
 		</form>
 	</div>
-</div> {% endcomment %}
+</div> 
 <!-- add Javasscript file from js file -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
