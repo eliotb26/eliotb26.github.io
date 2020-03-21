@@ -63,7 +63,6 @@ a {
 
 .header {
     position: relative;
-    background-image: url('../images/headerback.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -106,6 +105,8 @@ a {
     grid-template-columns: 40% 60%;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
+    grid-auto-rows: minmax(75px, auto);
+    /*grid-auto-row: 100px; */
     /*
     grid-gap:1em;   if gaps for row and column will be same
     */
@@ -113,7 +114,8 @@ a {
 
 .wrapper>div {
     background: #eee;
-    padding: 0em;
+    padding: 1em;
+    border: #333 1ps solid;
 }
 
 .wrapper>div:nth-child(odd) {
